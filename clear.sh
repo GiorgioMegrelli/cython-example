@@ -1,3 +1,5 @@
+#!/bin/bash
+
 MODULE=example_cython
 GENERATED_MODULE=example
 
