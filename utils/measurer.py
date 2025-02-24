@@ -29,7 +29,7 @@ class TimeMeasurer:
     def as_table(self) -> str:
         data = {
             F_NAME_KEY: list(map(lambda r: r.f_name, self._results)),
-            AVG_TIME_KEY: list(map(lambda r: f"{r.avg_time:4f} s.", self._results)),
+            AVG_TIME_KEY: list(map(lambda r: f"{r.avg_time:.3f} s.", self._results)),
             REPEAT_N_KEY: [self._repeat_n] * len(self._results)
         }
         return TableView(data).format()
